@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="ue.js"></script>
+    <title>Our Progress</title>
+</head>
+
+<body style="margin: 0;">
+    <div class="nav">
+        <ul>
+            <li style="width: 128.5 px;"><img
+                    src="https://www.bluedragon.org/wp-content/uploads/2017/02/bluedragonlogo-sml.png" alt="logo"></li>
+            <div class="side-navi">
+                <li><a href="https://www.facebook.com/bluedragonvietnam/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/bluedragonchildren/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/intent/tweet?text=Blue%20Dragon%20Children%27s%20Foundation&url=https%3A%2F%2Fwww.bluedragon.org"><i class="fa fa-twitter"></i></a></li>
+            </div>
+            <div class="side-nav">
+                <li><a href="../mainpage/mainpg.html">Home</a></li>
+                <li><a href="../our progress/op.html">Our Progress</a></li>
+                <li><a href="../upcoming events/ue.html">Upcoming Events</a></li>
+                <li><a href="../mainpage/mainpg.html#contacts">Contact</a></li>
+                <li class="b"onclick="openForm()">Admin</li>
+            </div>
+        </ul>
+    </div>
+    <div class="form-popup" id="myForm"> 
+        <form onsubmit="return checkPassword()" action="../mainpage/mainpg.html" method="GET">
+            <div>
+                <label for="name">Username:</label><br>
+                <input id="idname" name="idname" type="text" required><br>
+            </div>
+            <div>
+                <label for="password">Password:</label><br>
+                <input id="password" name="password" type="password" required><br><br>
+            </div>
+            <button type="submit">Submit</button>
+            <button type="reset" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
+    <div class="bgimg">
+        <div class="middle">
+            <h1>COMING SOON</h1>
+            <hr>
+            <p id="date">August 22nd</p>
+        </div>
+        <div class="bottomleft">
+            <p>See you at our First Meeting!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
