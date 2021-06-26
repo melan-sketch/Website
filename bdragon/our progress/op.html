@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="op.css">
+    <script defer src="op.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Upcoming Events</title>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li style="width: 128.5 px;"><img
+                    src="https://www.bluedragon.org/wp-content/uploads/2017/02/bluedragonlogo-sml.png" alt="logo"></li>
+            <div class="side-navi">
+              <li><a href="https://www.facebook.com/bluedragonvietnam/"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/bluedragonchildren/?hl=en"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://twitter.com/intent/tweet?text=Blue%20Dragon%20Children%27s%20Foundation&url=https%3A%2F%2Fwww.bluedragon.org"><i class="fa fa-twitter"></i></a></li>
+            </div>
+            <div class="side-nav">
+              <li><a href="../mainpage/mainpg.html">Home</a></li>
+              <li><a href="../our progress/op.html">Our Progress</a></li>
+              <li><a href="../upcoming events/ue.html">Upcoming Events</a></li>
+              <li><a href="../mainpage/mainpg.html#contacts">Contact</a></li>
+              <li class="b"onclick="openForm()">Admin</li>
+            </div>
+        </ul>
+    </div>
+    <div class="form-popup" id="myForm" style="visibility: hidden;"> 
+      <form method="POST">
+          <div>
+              <label for="name">Username:</label><br>
+              <input id="idname" name="idname" type="text" required><br>
+          </div>
+          <div>
+              <label for="password">Password:</label><br>
+              <input id="password" name="password" type="password" required><br><br>
+          </div>
+          <button type="button" onclick="return checkPassword()" >Submit</button>
+          <button type="reset" onclick="closeForm()">Cancel</button>
+          <button type="button" id="new-edit" class="form" onclick="showEdit()" style="visibility: hidden;">Edit</button>
+      </form>
+  </div>
+    <div class="timeline">
+        <div class="container left">
+          <div class="date"></div>
+          <i class="icon fa fa-exclamation"></i>
+          <div class="content" id="content">
+            <h2>Events</h2>
+            <p>
+                Check out and stay updated on our club's future events such as bakesales and donation trips!
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="date">22 Aug</div>
+          <i class="icon fa fa-universal-access"></i>
+          <div class="content">
+            <h2>First Club Meeting</h2>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+            </p>
+          </div>
+        </div>
+        <div class="container left" >
+          <div class="date">10 Sep</div>
+          <i class="icon fa fa-user"></i>
+          <div class="content" id="content">
+            <h2>Mid Autumn Festival</h2>
+            <p contenteditable="true">
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="date" >31 Oct</div>
+          <i class="icon fa fa-film"></i>
+          <div class ="content" id="content">
+            <h2  class>Halloween Movie Night</h2>
+            <p  class>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+            </p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="date">10 Nov</div>
+          <i class="icon fa fa-dollar"></i>
+          <div class="content" id="content">
+            <h2>High School Market Day</h2>
+            <p>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="date">01 Dec</div>
+          <i class="icon fa fa-certificate"></i>
+          <div class="content" id="content">
+            <h2  class>Christmas Fun Run</h2>
+            <p  class>
+              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+            </p>
+          </div>
+        </div>
+        <button class="edit" id="editor" onclick="saveEdits()" style="visibility: hidden">Save my Edits</button>
+      </div>
+</body>
+
+</html>
